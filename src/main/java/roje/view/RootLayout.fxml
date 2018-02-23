@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1220.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Characters">
+            <content>
+              <fx:include fx:id="characterSearchView" source="CharacterSearchView.fxml" />
+            </content>
+          </Tab>
+          <Tab text="Comics">
+            <content>
+              <fx:include fx:id="comicSearchView" source="ComicSearchView.fxml" />
+            </content>
+          </Tab>
+            <Tab text="Library">
+              <content>
+              <fx:include fx:id="libraryView" source="LibraryView.fxml" />                
+              </content>
+            </Tab>
+            <Tab text="Recommendations">
+              <content>
+                <fx:include fx:id="recommendationsView" source="RecommendationsView.fxml" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
